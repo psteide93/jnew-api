@@ -25,4 +25,7 @@ public class Album {
 
   @Column(name = "numberOfSongs")
   private String numberOfSongs;
+
+  @Column(name = "tracklist")
+  private String[] tracklist;
 }

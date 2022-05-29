@@ -30,6 +30,7 @@ public class AlbumService {
         updatedAlbum.setTitle(Album.getTitle());
         updatedAlbum.setYear(Album.getYear());
         updatedAlbum.setNumberOfSongs(Album.getNumberOfSongs());
+        updatedAlbum.setTracklist(Album.getTracklist());
 
         albumRepository.save(updatedAlbum);
         return Optional.of(updatedAlbum);

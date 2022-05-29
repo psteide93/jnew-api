@@ -27,10 +27,10 @@ public class AlbumService {
 
     if (foundAlbum.isPresent()) {
         Album updatedAlbum = foundAlbum.get();
-        updatedAlbum.setTitle(Album.getTitle());
-        updatedAlbum.setYear(Album.getYear());
-        updatedAlbum.setNumberOfSongs(Album.getNumberOfSongs());
-        updatedAlbum.setTracklist(Album.getTracklist());
+        updatedAlbum.setTitle(album.getTitle());
+        updatedAlbum.setYear(album.getYear());
+        updatedAlbum.setNumberOfSongs(album.getNumberOfSongs());
+        updatedAlbum.setTracklist(album.getTracklist());
 
         albumRepository.save(updatedAlbum);
         return Optional.of(updatedAlbum);
